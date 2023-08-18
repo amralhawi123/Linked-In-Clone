@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "link[referrerpolicy]"
+        ]
+      }
+    ],
+    "compat-api/css": [
+      "off",
+      {
+        "ignore": [
+          "width: fit-content"
+        ]
+      }
+    ]
+  }
+}
