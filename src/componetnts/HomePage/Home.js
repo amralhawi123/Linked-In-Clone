@@ -1,14 +1,14 @@
-import React from 'react'
-import NavbarHome from './NavbarHome'
-import Section from './Section'
+import React from "react";
+import NavbarHome from "./NavbarHome";
+import Section from "./Section";
 
 const Home = () => {
   return (
     <div>
-      <NavbarHome/>
-      <Section/>
+      <NavbarHome />
+      <Section />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
