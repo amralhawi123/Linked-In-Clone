@@ -10,7 +10,8 @@ const Landing = (props) => {
 
   useEffect(() => {
     props.user && navigate("/home")
-  }, [props.user])
+  }, [navigate, props.user])
+
   return (
     <div className='landing'>
       <Container>
