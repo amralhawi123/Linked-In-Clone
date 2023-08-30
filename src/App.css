@@ -218,13 +218,17 @@ position: absolute !important;
    cursor: pointer; 
 }
 @media (max-width:676px) {
-   .main .box {
-      flex-wrap: wrap !important;
-      }
+ 
       .main .box div{
          padding: 10px;
          cursor: pointer;
          width: auto !important;
+      }
+      .main .box div p{
+font-size: 15px;
+      }
+      .main .box div i{
+font-size: 15px;
       }
 }
 .main .box div:hover{
@@ -295,8 +299,19 @@ position: absolute !important;
 }
 @media (max-width:992px) {
    .post-actions button{
-      padding: 5px;
-      width: auto;
+      padding: 5px; 
+   }
+   .post-actions button span{  
+      font-size: 15px;
+   }
+   .post-actions button img{  
+      width: 20px;
+   }
+}
+
+@media (max-width:678px) {
+   .post-actions button{ 
+      gap: 2px !important;
    }
 }
 

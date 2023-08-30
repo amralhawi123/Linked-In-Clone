@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Button, Form, NavDropdown, Navbar } from "react-bootstrap";
+import { Button, Form, NavDropdown, Navbar, Row } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import { connect } from "react-redux";
 import loader from "../../images/loader.svg";
@@ -153,7 +153,8 @@ const Post = (props) => {
                     </li>
                   </ul>
                 </div>
-                <div className="post-actions d-flex align-items-center justify-content-center gap-2 w-100">
+                <Row>
+                <div className="post-actions d-flex align-items-center justify-content-between  w-100">
                   <button onClick={() => handleCount(post.id)}>
                     <img src={like} alt="" />
                     <span>Like</span>
@@ -171,6 +172,8 @@ const Post = (props) => {
                     <span>Send</span>
                   </button>
                 </div>
+                </Row>
+
                 {post.comments.length >= 1
                   ? post.comments.map((com) => (
                       <div className="comment p-3">
