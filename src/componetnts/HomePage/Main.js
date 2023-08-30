@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { Col } from "react-bootstrap";
+import React, { useState } from "react"; 
 import Card from "react-bootstrap/Card";
 import { connect } from "react-redux";
 import PostModule from "./PostModule";
@@ -17,9 +16,10 @@ const Main = (props) => {
       {showModule === true ? <div className="overlay"></div> : null}
 
       <Card
-        style={{ width: "100%", flexDirection: "row", flexWrap: "wrap" }}
+        style={{ width: "100%" }}
         className="p-3 d-flex align-items-center"
       >
+        <div className='w-100 d-flex'>
         <div>
           {props.user && props.user.photoURL ? (
             <img src={props.user.photoURL} alt="img" className="main-image" />
@@ -36,31 +36,32 @@ const Main = (props) => {
             start a post..
           </button>
         </div>
+        </div>
         <div className="box d-flex align-items-center w-100 mt-3">
-          <Col className="d-flex align-items-center gap-2">
+          <div className="d-flex align-items-center gap-2" style={{width:"25%"}}>
             <i
               class="fa-solid fa-image"
               style={{ color: "var(--main-color)" }}
             ></i>
             <p style={{ color: "var(--main-color)", margin: 0 }}>Photo</p>
-          </Col>
-          <Col className="d-flex align-items-center gap-2">
+          </div>
+          <div className="d-flex align-items-center gap-2" style={{width:"25%"}}>
             <i class="fa-brands fa-youtube" style={{ color: "green" }}></i>
             <p style={{ color: "var(--main-color)", margin: 0 }}>Video</p>
-          </Col>
-          <Col className="d-flex align-items-center gap-2">
+          </div>
+          <div className="d-flex align-items-center gap-2" style={{width:"25%"}}>
             <i
               class="fa-regular fa-calendar-days"
               style={{ color: "orange" }}
             ></i>
             <p style={{ color: "var(--main-color)", margin: 0 }}>Event</p>
-          </Col>
-          <Col className="d-flex align-items-center gap-2">
+          </div>
+          <div className="d-flex align-items-center gap-2" style={{width:"25%"}}>
             <i class="fa-solid fa-keyboard" style={{ color: "red" }}></i>
             <p style={{ color: "var(--main-color)", margin: 0 }}>
               Write article
             </p>
-          </Col>
+          </div>
         </div>
       </Card>
       <Post />

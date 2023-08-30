@@ -12,12 +12,9 @@
       }
     ],
     "compat-api/css": [
-      "off",
-      {
-        "ignore": [
-          "width: fit-content"
-        ]
-      }
-    ]
+      "off"
+    ],
+    "disown-opener": "off",
+    "axe/language": "off"
   }
 }
